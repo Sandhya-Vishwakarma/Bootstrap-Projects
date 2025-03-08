@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+
+        h1{
+            padding:20px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .container-fluid{
+            background-color: grey;
+            margin-left:20px ;
+        }
+
+        h2{
+            margin: 20px;
+        }
+        
+        .parent1{
+            background-color: aqua; 
+            height: 100px;
+            padding: 15px;
+        }
+        
+        .parent2{
+            background-color: green; 
+            color: white;
+            padding: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Bootstrap Container Example</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <h1>Fluid Container</h1>
+            <p style="font-size: 20px;">This is an example of Fluid container, This fluid container is very easy to use</p>
+        </div>
+    </div>
+
+    <h2>Bootstrap Button Styles</h2>
+        <button type="button" class="btn btn-primary" style="margin-left: 20px;">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        
+    <h2>Responsive Column Layout</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12" style="background-color: blue; height: 50px;">Column 1</div>
+            <div class="col-md-4 col-sm-6" style="background-color: orange; height: 50px;">Column 1</div>
+            <div class="col-md-4 col-sm-6" style="background-color: red; height: 50px;">Column 1</div>
+        </div>
+    </div>
+
+    <h2>Nested Grid System</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 parent1">Parent column 1
+                <div class="row">
+                    <div class="col-6" style="background-color: white; height: 40px;">Nested Column A</div>
+                    <div class="col-6" style="background-color: yellow; height: 40px;">Nested Column b</div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 parent2">Parent column 2</div>
+    </div>
+
+    <h2>Responsive Dashboard Layout</h2>
+   <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-3" style="background-color: cadetblue; height: 50px; padding: 10px;">Sidebar</div>
+        <div class="col">Main Content</div>
+    </div>
+   </div>
+
+   <h2>Card with Responsive Button Group</h2>
+   <div class="container" style="border: 2px solid;">
+    <h3>Bootstrap Card</h3>
+    <p>This card contains a responsive button group</p>
+    <div class="row">
+        <button type="button" class="btn btn-primary col-md-1" style="margin: 5px;">Save</button>
+        <button type="button" class="btn btn-success col-md-1" style="margin: 5px;">Submit</button>
+        <button type="button" class="btn btn-danger col-md-1" style="margin: 5px;">Cancel</button>
+    </div>
+   </div>
+
+</body>
+</html>
